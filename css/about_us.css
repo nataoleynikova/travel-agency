@@ -1,0 +1,68 @@
+body{
+  background: linear-gradient(to bottom, white, #6495ed);
+  margin: 20px;
+}
+
+.info{
+  display: flex;
+  margin-top: 30px;
+}
+
+/* Опыт */
+.img{
+  margin-left: auto;
+}
+.info-exp{
+  border-style: outset;
+  border-width: thick;
+  border-color: aliceblue;
+  background: seashell;
+  padding: 10px;
+  text-align: justify;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 30%;
+  height: 230px;
+  position: relative;
+  right: -310px;
+  top: 40px;
+}
+
+/* Заголовки */
+.second-title {
+    font-style: oblique;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* О путешествиях */
+.info-jour{
+    border-style: inset;
+    border-width: thick;
+    border-color: aliceblue;
+    background: seashell;
+    padding: 10px;
+    text-align: justify;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 30%;
+    height: 230px;
+    position: relative;
+    left: -60px;
+    top: 60px;
+}
+
+.text{
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Цитата */
+.quote{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+}

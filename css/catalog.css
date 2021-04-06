@@ -1,0 +1,46 @@
+body{
+    background: linear-gradient(to bottom, white, #6495ed);
+    margin: 20px;
+}
+
+.countries{
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 100px;
+}
+
+.hide, .hide + label ~ div {
+    display: none;
+}
+
+.hide + label,
+.hide:checked + label {
+    padding: 1em;
+    cursor: pointer;
+}
+
+.hide:checked + label {
+    border-bottom: 0;
+}
+
+.hide:checked + label + div {
+    display: block;
+    padding: 10px;
+}
+
+label{
+    font-size: 1.17em;
+    font-style: oblique;
+}
+
+p{
+    margin: 0 0 0 100px;
+}
+
+/* Эксклюзивные */
+.exotic{
+    font-size: 1.17em;
+    font-style: oblique;
+    margin-left: 15px;
+    margin-top: 15px;
+}
