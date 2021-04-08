@@ -15,8 +15,8 @@ body{
 
 .hide + label,
 .hide:checked + label {
-    padding: 1em;
     cursor: pointer;
+    padding: 1em;
 }
 
 .hide:checked + label {
@@ -29,18 +29,14 @@ body{
 }
 
 label{
-    font-size: 1.17em;
-    font-style: oblique;
+    font: 1.17em oblique;
 }
 
 p{
     margin: 0 0 0 100px;
 }
 
-/* Эксклюзивные */
 .exotic{
-    font-size: 1.17em;
-    font-style: oblique;
-    margin-left: 15px;
-    margin-top: 15px;
+    font: 1.17em oblique;
+    margin: 15px 0 0 20px;
 }
