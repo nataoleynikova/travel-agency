@@ -1,0 +1,50 @@
+/* Адаптивность на 400px и меньше */
+@media (max-width: 400px) {
+  /* Шапка */
+  #header{
+    width: 100%;
+  }
+  .pages{
+    margin-top: 0;
+    bottom: 0;
+  }
+
+  /* Для страницы index */
+  .description{
+    width: 100%;
+  }
+  .second-title{
+    font-size: 3em;
+  }
+  .text{
+    font-size: 1.5em;
+  }
+  .img{
+    width: 360px;
+  }
+
+  /* Для страницы about_us */
+  .info-exp{
+    position: sticky;
+  }
+}
+
+
+/* Адаптивность на 1400px и больше */
+@media (min-width: 1400px) {
+  /* Шапка */
+  #header{
+    width: 100%;
+  }
+  .title{
+    font-size: 3em;
+  }
+
+  /* Для страницы index*/
+  .second-title{
+    font-size: 3em;
+  }
+  .text{
+    font-size: 1.5em;
+  }
+}

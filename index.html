@@ -4,11 +4,25 @@
     <meta charset="UTF-8">
     <title>Туристическая компания L'Avion | Туры по всему миру</title>
     <link rel="Stylesheet" href="css/index.css">
+    <link rel="Stylesheet" href="css/media.css">
   </head>
 
   <body>
-    <div>
+    <!-- Шапка -->
+    <div id="header">
+      <div class="logo-and-title">
+        <a href="index.html">
+          <img class="logo" src="images/logo.jpg" width="180" height="180" alt="logo">
+        </a>
+        <h1 class="title">Туристическая компания L'Avion - с нами Вы увидите весь мир!</h1>
+      </div>
+      <div class="pages">
+        <h2 class="page"><a href="about_us.html">О компании</a></h2>
+        <h2 class="page"><a href="catalog.html">Каталог туров</a></h2>
+      </div>
+    </div>
 
+    <div>
       <!-- Краткое описание компании -->
       <div class="description">
         <h3 class="second-title">Почему мы?</h3>
@@ -21,52 +35,94 @@
           И пусть весь мир расстелится у Ваших ног!</p>
       </div>
 
+      <div class="container">
       <!-- Страны, первая линия -->
-      <div class="part-one">
-        <div class="country">
-          <img class="img" src="images/europe.jpg" alt="europe" width="540" height="360">
-          <p class="label">Европа</p>
+        <div class="part-one">
+          <div class="country">
+            <img class="img" src="images/europe.jpg" alt="europe" width="540" height="360">
+            <p class="label">Европа</p>
+          </div>
+          <div class="country">
+            <img class="img" src="images/america.jpg" alt="north_america" width="540" height="360">
+            <p class="label">Северная Америка</p>
+          </div>
         </div>
-        <div class="country">
-          <img class="img" src="images/america.jpg" alt="north_america" width="540" height="360">
-          <p class="label">Северная Америка</p>
+
+        <!-- Страны, вторая линия -->
+        <div class="part-two">
+          <div class="country">
+            <img class="img" src="images/l-america.jpg" alt="latin_america" width="540" height="360">
+            <p class="label">Латинская Америка</p>
+          </div>
+          <div class="country">
+            <img class="img" src="images/asia.jpg" alt="asia" width="540" height="360">
+            <p class="label">Азия</p>
+          </div>
+        </div>
+
+        <!-- Страны, третья линия -->
+        <div class="part-three">
+          <div class="country">
+            <img class="img" src="images/africa.jpg" alt="africa" width="540" height="360">
+            <p class="label">Африка</p>
+          </div>
+          <div class="country">
+            <img class="img" src="images/russia.jpg" alt="russia" width="540" height="360">
+            <p class="label">Россия</p>
+          </div>
+        </div>
+
+        <!-- Страны, четвертая линия -->
+        <div class="part-four">
+          <div class="country">
+            <img class="img" src="images/australia.jpg" alt="australia" width="540" height="360">
+            <p class="label">Австралия и Океания</p>
+          </div>
+          <div class="country">
+           <img class="img" src="images/exotic.jpg" alt="exotic_tours" width="540" height="360">
+           <p class="label">Эксклюзивные туры</p>
+          </div>
         </div>
       </div>
+    </div>
 
-      <!-- Страны, вторая линия -->
-      <div class="part-two">
-        <div class="country">
-          <img class="img" src="images/l-america.jpg" alt="latin_america" width="540" height="360">
-          <p class="label">Латинская Америка</p>
-        </div>
-        <div class="country">
-          <img class="img" src="images/asia.jpg" alt="asia" width="540" height="360">
-          <p class="label">Азия</p>
-        </div>
-      </div>
+    <!-- Подвал -->
+    <div class="footer-menu">
+      <div class="footer-container">
 
-      <!-- Страны, третья линия -->
-      <div class="part-three">
-        <div class="country">
-          <img class="img" src="images/africa.jpg" alt="africa" width="540" height="360">
-          <p class="label">Африка</p>
-        </div>
-        <div class="country">
-          <img class="img" src="images/russia.jpg" alt="russia" width="540" height="360">
-          <p class="label">Россия</p>
-        </div>
-      </div>
+        <!-- Активные ссылки на др. страницы-->
+        <ul>
+          <li><a href="about_us.html">О компании</a></li>
+          <li><a href="catalog.html">Каталог туров</a></li>
+        </ul>
 
-      <!-- Страны, четвертая линия -->
-      <div class="part-four">
-        <div class="country">
-          <img class="img" src="images/australia.jpg" alt="australia" width="540" height="360">
-          <p class="label">Австралия и Океания</p>
+        <!-- Контакты -->
+        <p class="cont">350051, г. Краснодар, ул. Монтажников, д. 12/2, 2 этаж, офис 205<br>
+          +7 (900) 00 000 00<br>
+          +7 (901) 00 000 00<br>
+          +7 (902) 00 000 00<br>
+          info@lavion.ru</p>
+
+        <!-- Соц. сети -->
+        <div class="social-net">
+          <div class="socials">
+            <a class="social-icon" href="https://www.facebook.com/" target="_blank">
+              <img src="images/fb.png" alt="Facebook icon">
+            </a>
+          </div>
+          <div class="socials">
+            <a class="social-icon" href="https://www.instagram.com/" target="_blank">
+              <img src="images/inst.png" alt="Instagram icon">
+            </a>
+          </div>
+          <div class="socials">
+            <a class="social-icon" href="https://twitter.com/" target="_blank">
+              <img src="images/tw.png" alt="Twitter icon">
+            </a>
+          </div>
         </div>
-        <div class="country">
-          <img class="img" src="images/exotic.jpg" alt="exotic_tours" width="540" height="360">
-          <p class="label">Эксклюзивные туры</p>
-        </div>
+
+        <p class="copyright">Туристическая компания L'Avion<br>2010 - 2021</p>
       </div>
     </div>
   </body>
