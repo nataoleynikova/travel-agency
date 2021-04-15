@@ -1,50 +1,47 @@
-/* Адаптивность на 400px и меньше */
-@media (max-width: 400px) {
-  /* Шапка */
-  #header{
-    width: 100%;
-  }
-  .pages{
-    margin-top: 0;
-    bottom: 0;
-  }
+/* Адаптивность на 600px и меньше */
+@media (max-width: 600px) {
 
   /* Для страницы index */
-  .description{
-    width: 100%;
+  .logo{
+    width: 150px;
+    height: 150px;
   }
-  .second-title{
-    font-size: 3em;
+  .title{
+    font-size: medium;
   }
-  .text{
-    font-size: 1.5em;
+  .country{
+    margin: 30px 0 0 0;
   }
-  .img{
-    width: 360px;
+  .footer-container{
+    justify-content: flex-end;
+    background-color: black;
   }
 
   /* Для страницы about_us */
-  .info-exp{
-    position: sticky;
+  .info-one{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .info-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
 
 /* Адаптивность на 1400px и больше */
 @media (min-width: 1400px) {
-  /* Шапка */
-  #header{
-    width: 100%;
-  }
-  .title{
-    font-size: 3em;
-  }
 
   /* Для страницы index*/
-  .second-title{
-    font-size: 3em;
+  .text-ind{
+    width: 70%;
   }
-  .text{
-    font-size: 1.5em;
+  .container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
   }
+
 }
