@@ -53,6 +53,7 @@
 
 body{
   background: linear-gradient(to bottom, white, #6495ed);
+  margin: 0;
 }
 
 @font-face{

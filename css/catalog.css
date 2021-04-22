@@ -53,12 +53,17 @@
 
 body{
   background: linear-gradient(to bottom, white, #6495ed);
+  margin: 0;
 }
 
 .countries{
   display: flex;
   flex-flow: column wrap;
   margin-left: 100px;
+}
+
+.block{
+  margin: 15px 0 15px 0;
 }
 
 .hide, .hide + label ~ div {

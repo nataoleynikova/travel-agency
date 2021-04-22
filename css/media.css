@@ -42,7 +42,12 @@
 
   .country{
     display: flex;
-    margin: 30px 0 0 0;
+    margin: 15px;
+  }
+
+  .img{
+    max-width: 100%;
+    height: auto;
   }
 
   .footer-container{
@@ -87,6 +92,7 @@
   .text-ind{
     width: 70%;
   }
+
   .container{
     display: flex;
     flex-flow: row wrap;
@@ -103,6 +109,6 @@
   }
 
   .exotic{
-    margin: 18px 0 0 20px;
+    margin: 15px 0 0 20px;
   }
 }
