@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Туристическая компания L'Avion | Туры по всему миру</title>
+    <link rel="Stylesheet" href="css/calculator.css">
+    <link rel="Stylesheet" href="css/media.css">
+    <script src="calc.js"></script>
+  </head>
+
+  <body>
+    <p>Рассчитать стоимость тура</p>
+    <form name="calculator">
+      <table>
+        <tr>
+          <td>Выберите страну</td>
+          <td>
+            <label for="country"></label>
+            <select onchange="calc()" name="country" id="country">
+              <option selected value="1000">Турция</option>
+              <option value="4000">Великобритания</option>
+              <option value="2000">Бразилия</option>
+            </select>
+          </td>
+
+          <td>Выберите количество дней</td>
+          <td>
+            <label for="days"></label>
+            <select onchange="calc()" name="days" id="days">
+              <option selected value="3">3 дня, 2 ночи</option>
+              <option value="5">5 дней, 4 ночи</option>
+              <option value="7">7 дней, 6 ночей</option>
+            </select>
+          </td>
+
+          <td>Выберите количество человек</td>
+          <td>
+            <label for="people"></label>
+            <select onchange="calc()" name="people" id="people">
+              <option value="2" selected>2 взрослых</option>
+              <option value="3">2 взрослых, 1 ребенок</option>
+              <option value="4">2 взрослых, 2 ребенка</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <button onclick="calc()">Рассчитать стоимость тура</button>
+    <div id="result"></div>
+  </body>
+</html>
