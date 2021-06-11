@@ -1,12 +1,37 @@
+// Связка days и nights
+let days = document.getElementById('days');
+let nights = document.getElementById('nights');
+
+days.addEventListener ('input', function() {
+  // event?
+  let value = parseInt(event.target.value);
+  if (Number.isFinite(value)) {
+    nights.value = value - 1;
+  }
+});
+
+nights.addEventListener ('input', function() {
+  let value = parseInt(event.target.value);
+  if (Number.isFinite(value)) {
+    days.value = value + 1;
+  }
+});
+
+// Калькулятор
 function calc() {
-  let country = document.getElementById("country");
-  let days = document.getElementById("days");
-  let people = document.getElementById("people");
-  let result = document.getElementById("result");
-  let price = 1;
-  price += country.options[country.selectedIndex].value;
-  price += days.options[country.selectedIndex].value;
-  price += people.options[country.selectedIndex].value;
-  price = country * days * people;
-  result.innerHTML = price;
+  let country = document.getElementById('country');
+  let count_val = country.options[country.selectedIndex].value;
+  
+  let days = document.getElementById('days').value;
+  let days_val = Number(days);
+  
+  let nights = document.getElementById('nights').value; 
+  let nights_val = Number(nights) / 2;
+  
+  let people = document.getElementById('people').value;
+  let people_val = Number(people);
+  
+  let result = count_val * (days_val + nights_val) * people_val;
+
+  document.getElementById('result').innerHTML = result;
 }
