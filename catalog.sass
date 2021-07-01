@@ -1,0 +1,27 @@
+body
+  background: linear-gradient(to bottom, white, #6495ed)
+
+.countries
+  display: flex
+  flex-flow: column wrap
+  margin-left: 100px
+
+hide, .hide + label ~ div 
+	display: none
+	+ label, &:checked + label 
+		cursor: pointer
+		padding: 1em
+	
+
+.hide:checked + label 
+	border-bottom: 0
+	+ div 
+		display: block
+		padding: 10px
+
+label 
+	font: 1.17em oblique
+
+.exotic
+  font: 1.17em oblique
+  margin: 15px 0 0 20px
