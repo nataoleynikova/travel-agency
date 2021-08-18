@@ -1,158 +1,39 @@
-/* Шапка */
-@font-face {
-  font-family: Brygada_1918;
-  src: url("../fonts/Brygada_1918/static/Brygada1918-Bold.ttf");
-}
-
-#header{
-  display: flex;
-  flex-direction: row;
-  height: 200px;
-  width: 100%;
-}
-
-.logotype{
-  display: inline;
-}
-
-.logo{
-  float: left;
-  margin: 0 10px 10px 0;
-  position: relative;
-}
-
-.title-and-pages{
-  flex-direction: column;
-  margin: 0 0 0 15px;
-}
-
-.title{
-  color: #6495ed;
-  font: 30px Brygada_1918, serif;
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
-
-.page{
-  display: inline;
-}
-
-.page a{
-  color: #6495ed;
-  font: italic 20px Montserrat, sans-serif;
-  margin-right: 50px;
-  text-decoration:none;
-  width: 50px;
-}
-
-.page a:hover{
-  color: darkblue;
-}
-/* Окончание шапки */
-
-
-body{
-  background: linear-gradient(to bottom, white, #6495ed);
-}
-
-@font-face{
+font-face {
   font-family: "Caveat";
-  src: url('../fonts/Caveat/static/Caveat-Regular.ttf') format('TrueType');
-}
+  src: url("../fonts/Caveat/static/Caveat-Regular.ttf") format("TrueType"); }
 
-.description{
-  margin: 0 0 0 15px;
-}
+body {
+  background-image: url(../images/background.jpg);
+  margin: 0; }
 
-.second-title{
-  font: oblique 25px Caveat, serif;
-}
+.description {
+  margin: 0 0 0 15px; }
 
-.text-ind{
+.second-title {
+  font: oblique 25px Caveat, serif; }
+
+.text-ind {
   border-width: 3px 7px 7px 4px;
   border-style: double;
-  padding: 7px;
-}
+  margin: 0 0 0 30px;
+  padding: 7px; }
 
-.container{
+.container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-}
+  justify-content: center; }
 
-.country{
+.country {
   margin: 30px 15px 0 15px;
-  position: relative;
-}
+  position: relative; }
 
-.label{
+.label {
   background: none;
   box-sizing: border-box;
   color: #fff;
   font-size: 20px;
   margin: 0;
-  padding: 20px 12px 5px 12px;
+  padding: 30px 12px 5px 12px;
   position: absolute;
   right: 0;
-  top: 0;
-}
-
-
-/* Подвал */
-.footer-menu{
-  display: flex;
-  justify-content: center;
-}
-
-.footer-container{
-  align-items: center;
-  display: inline;
-  justify-content: space-between;
-  margin: 0 auto;
-  text-align: center;
-  width: 100%;
-}
-
-.act-pages{
-  padding-inline-start: 0;
-}
-
-.footer-menu ul li{
-  display:inline;
-}
-
-.footer-menu ul li a{
-  color:azure;
-  font-size:20px;
-  margin-left:20px;
-  text-decoration:none;
-}
-
-.footer-menu ul li a:hover{
-  color:darkblue;
-}
-
-.cont{
-  color: azure;
-}
-
-.social-net{
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-.social-icon:hover{
-  bottom: 5px;
-  position: relative;
-}
-
-.socials{
-  margin-right: 8px;
-}
-
-.copyright{
-  color:azure;
-  font-size:15px;
-}
-/* Окончание подвала */
+  top: 0; }
