@@ -1,8 +1,11 @@
+@mixin margin
+    margin: 0
+
 /* Адаптивность на 600px и меньше */
-media (max-width: 600px)
+@media (max-width: 600px)
   /* Шапка */
   .page
-    margin: 0
+    @include margin
 
   .title
     font-size: medium
@@ -10,7 +13,7 @@ media (max-width: 600px)
     padding: 0
 
   /* Подвал */
-  .footer-container{
+  .footer-container
     justify-content: flex-end
 
   /* Для страницы index */
@@ -29,9 +32,12 @@ media (max-width: 600px)
     width: 100%
 
   /* Для страницы about_us */
-  .info-one
+  %info-shared
     display: flex
     flex-direction: column
+  
+  .info-one
+    @extend %info-shared
     margin: 0 15px 15px 15px
 
   .info
@@ -40,8 +46,7 @@ media (max-width: 600px)
     width: 100%
 
   .info-two
-    display: flex
-    flex-direction: column
+    @extend %info-shared
     margin: 15px 15px 0 15px
 
   img 
@@ -63,10 +68,10 @@ media (max-width: 600px)
 
   /* Для страницы index*/
   .description
-    margin: 0
+    @include margin
   
   .text-ind
-    margin: 0
+    @include margin
 
   .img 
     height: 240px
@@ -85,15 +90,18 @@ media (max-width: 600px)
 
 
 /* Адаптивность на 1400px и больше */
-media (min-width: 1400px)
+@media (min-width: 1400px)
   /* Для страницы index*/
   .text-ind
     width: 70%
   
-  .container
+  %cont-shared
     display: flex
     flex-flow: row wrap
     justify-content: center
+
+  .container
+    @extend %cont-shared
 
   /* Для страницы about_us */
   .info 
@@ -104,10 +112,8 @@ media (min-width: 1400px)
 
   /* Для страницы catalog */
   .countries
-    display: flex
-    flex-flow: row wrap
+    @extend %cont-shared
     margin: 30px 0 30px 15px
-    justify-content: center
 
   h3 
     padding: 0 0 0 20px

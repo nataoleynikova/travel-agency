@@ -2,9 +2,12 @@ body
   background-image: url(../images/background.jpg)
   margin: 0
 
-.info-one
+%info-shared
   display: flex
   justify-content: space-evenly
+
+.info-one
+  @extend %info-shared
   margin: 30px 0 0 0
 
 .info
@@ -22,8 +25,7 @@ body
   text-align: center
 
 .info-two
-  display: flex
-  justify-content: space-evenly
+  @extend %info-shared
   margin: 30px 0 30px 0
 
 .text
@@ -33,9 +35,9 @@ body
 /* Цитата */
 $var1: 1px solid #020202
 .quote
-border-bottom: @var1
-border-top: @var1
-font: large italic
-margin: 60px 0 60px 0
-padding: 7px
-text-align: center
+  border-bottom: $var1
+  border-top: $var1
+  font: large italic
+  margin: 60px 0 60px 0
+  padding: 7px
+  text-align: center

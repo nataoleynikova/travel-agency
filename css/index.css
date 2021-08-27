@@ -1,31 +1,38 @@
 font-face {
   font-family: "Caveat";
-  src: url("../fonts/Caveat/static/Caveat-Regular.ttf") format("TrueType"); }
+  src: url("../fonts/Caveat/static/Caveat-Regular.ttf") format("TrueType"); 
+}
 
 body {
   background-image: url(../images/background.jpg);
-  margin: 0; }
+  margin: 0; 
+}
 
 .description {
-  margin: 0 0 0 15px; }
+  margin: 0 0 0 15px; 
+}
 
 .second-title {
-  font: oblique 25px Caveat, serif; }
+  font: oblique 25px Caveat, serif; 
+}
 
 .text-ind {
   border-width: 3px 7px 7px 4px;
   border-style: double;
   margin: 0 0 0 30px;
-  padding: 7px; }
+  padding: 7px; 
+}
 
 .container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center; }
+  justify-content: center; 
+}
 
 .country {
   margin: 30px 15px 0 15px;
-  position: relative; }
+  position: relative; 
+}
 
 .label {
   background: none;
@@ -36,4 +43,5 @@ body {
   padding: 30px 12px 5px 12px;
   position: absolute;
   right: 0;
-  top: 0; }
+  top: 0; 
+}
