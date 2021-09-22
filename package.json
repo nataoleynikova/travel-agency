@@ -1,22 +1,9 @@
 {
-  "name": "travel-agency",
-  "version": "1.0.0",
-  "description": "��#\u0000 \u0000t\u0000r\u0000a\u0000v\u0000e\u0000l\u0000-\u0000a\u0000g\u0000e\u0000n\u0000c\u0000y\u0000\r\u0000 \u0000",
-  "main": "calculator.js",
-  "scripts": {
-    "sass": "node-sass --watch sass -o css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nataoleynikova/travel-agency.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nataoleynikova/travel-agency/issues"
-  },
-  "homepage": "https://github.com/nataoleynikova/travel-agency#readme",
-  "dependencies": {
-    "node-sass": "^6.0.1"
-  }
+    "scripts": {
+        "watch-sass": "node-sass --watch sass -o css",
+        "compile-sass": "sass about_us.sass about_us.css"
+    },
+    "dependencies": {
+        "bootstrap": "^5.1.1"
+    }
 }
