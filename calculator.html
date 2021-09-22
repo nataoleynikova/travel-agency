@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Туристическая компания L'Avion | Туры по всему миру</title>
+    <link rel="Stylesheet" href="css/calculator.css">
+    <link rel="Stylesheet" href="css/media.css">
+    <script src="calculator.js" defer></script>
+  </head>
+
+  <body>
+    <form name="calculator">
+      <table>
+        <tr>
+          <td>Выберите страну:</td>
+          <td>
+            <select name="country" id="country">
+              <option value="1000">Турция</option>
+              <option value="4000">Великобритания</option>
+              <option value="2000">Бразилия</option>
+            </select>
+          </td>
+          <p>Введите количество дней:
+            <input id=days type="number" value="" size="40">
+          <p>Введите количество ночей:
+            <input id=nights type="number" value="" size="40">
+          <p>Сколько людей поедет:
+            <input id=people type="number" value="" size="40">
+        </tr>
+      </table>
+    </form>
+    <button onclick="calc()">Рассчитать стоимость тура</button>
+    <div id="result">0</div>
+  </body>
+</html>
