@@ -4,6 +4,7 @@
         "compile-sass": "sass about_us.sass about_us.css"
     },
     "dependencies": {
-        "bootstrap": "^5.1.1"
+        "bootstrap": "^5.1.1",
+        "jquery": "^3.6.0"
     }
 }
