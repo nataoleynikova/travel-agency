@@ -1,4 +1,22 @@
 @charset "UTF-8";
+/* Адаптивность от 600 до 900px */
+@media (max-width: 900px) {
+  /* Для страницы about_us */
+  .rightimg {
+    height: auto;
+    float: right;
+    max-width: 400px;
+    width: auto; 
+  }
+
+  .leftimg {
+    height: auto;
+    float: left;
+    max-height: 370px;
+    max-width: 350px;
+    width: auto; 
+  }
+}
 /* Адаптивность на 600px и меньше */
 @media (max-width: 600px) {
   /* Шапка */
@@ -33,10 +51,11 @@
   }
   
   .img {
-    width: 100%; 
+    height: auto;
+    width: 400px; 
   }
   
-    /* Для страницы about_us */
+  /* Для страницы about_us */
   .info-one, .info-two {
     display: flex;
     flex-direction: column; 
@@ -54,10 +73,6 @@
   
   .info-two {
     margin: 15px 15px 0 15px; 
-  }
-  
-  img {
-    width: 100%; 
   }
   
   .text {
@@ -93,11 +108,6 @@
   
   .label {
     font-size: 15px; 
-  }
-  
-  /* Для страницы about_us */
-  .img {
-    height: 280px; 
   }
   
   /* Для страницы catalog */

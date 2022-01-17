@@ -1,15 +1,12 @@
 // Связка days и nights
-let days = document.getElementById('days');
-let nights = document.getElementById('nights');
-
-days.addEventListener('input', function() {
+$('#days').on('input', function() {
   let value = parseInt(event.target.value);
   if (Number.isFinite(value)) {
     nights.value = value - 1;
   }
 });
 
-nights.addEventListener('input', function() {
+$('#nights').on('input', function() {
   let value = parseInt(event.target.value);
   if (Number.isFinite(value)) {
     days.value = value + 1;
@@ -33,4 +30,4 @@ function calc() {
   let result = count_val * (days_val + nights_val) * people_val;
 
   document.getElementById('result').innerHTML = result;
-}
+};

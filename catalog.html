@@ -6,77 +6,55 @@
     <title>Туристическая компания L'Avion | Туры по всему миру</title>
     <link rel="Stylesheet" href="css/catalog.css">
     <link rel="Stylesheet" href="css/media.css">
-    <!-- <link rel="import" href="header.html"> -->
     <link rel="Stylesheet" href="css/header.css">
     <link rel="Stylesheet" href="css/footer.css">
-    <!-- <link rel="Stylesheet" href="css/calculator.css"> -->
-    <script src="calculator.js" defer></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#europe").click(function() {
+          $("#content").toggle();
+        });
+        $("#n_america").click(function() {
+          $("#content_2").toggle();
+        });
+        $("#l_america").click(function() {
+          $("#content_3").toggle();
+        });
+        $("#asia").click(function() {
+          $("#content_4").toggle();
+        });
+        $("#africa").click(function() {
+          $("#content_5").toggle();
+        });
+        $("#russia").click(function() {
+          $("#content_6").toggle();
+        });
+        $("#australia").click(function() {
+          $("#content_7").toggle();
+        });
+      });
+    </script>
   </head>
 
   <body>
-    <!-- <script>
-      document.addEventListener('HTMLImportsLoaded', function(){
-        let link = document.querySelector('link[href*="header"]');
-        let template = link.import.querySelector('template');
-        let clone = document.importNode(template.content, true);
-        document.querySelector('#header').appendChild(clone);
-      });
-    </script> -->
     <!-- Шапка -->
     <div id="header">
       <div class="pages">
-        <h1 class="page"><a href="index.html">Главная</a></h1>
-        <h1 class="page"><a href="about_us.html">О компании</a></h1>
-        <h1 class="page"><a href="catalog.html">Каталог туров</a></h1>
+        <li class="page"><a href="index.html">Главная</a></li>
+        <li class="page"><a href="about_us.html">О компании</a></li>
+        <li class="page"><a href="catalog.html">Каталог туров</a></li>
+        <li class="page"><a href="calculator.html">Рассчет туров</a></li>
       </div>
       <div class="title-calc">
         <h2 class="title">Туристическая компания L'Avion - с нами Вы увидите 
           весь мир!</h2>
-        <!-- Калькулятор -->
-        <div class="calculator">
-          <form name="calculator">
-            <div class="mainSearchForm">
-              <table>
-                <tr>
-                  <div class="country">
-                    <td>Куда летим?</td>
-                    <td>
-                      <select name="country" id="country">
-                        <option value="1000">Турция</option>
-                        <option value="4000">Великобритания</option>
-                        <option value="2000">Бразилия</option>
-                      </select>
-                    </td>
-                  </div>
-                  <div class="days">
-                    <p>Сколько дней?
-                      <input id=days type="number" value="" size="40">
-                    </p>
-                  </div>
-                  <div class="nights">
-                    <p>Сколько ночей?
-                      <input id=nights type="number" value="" size="40">
-                    </p>
-                  </div>
-                  <div class="people">
-                    <p>Сколько людей?
-                      <input id=people type="number" value="" size="40">
-                    </p>
-                  </div>
-                </tr>
-              </table>
-            </div>
-          </form>
-          <button onclick="calc()">Стоимость тура:</button>
-          <div id="result">0</div>
-        </div>
       </div>
     </div>
     <div class="countries">
       <!-- Блок Европа -->
       <div class="block">
-        <ul><h3><a href="#">Туры по Европе</a></h3>
-          <div>
+        <ul><h3><a href="#" id="europe">Туры по Европе</a></h3>
+          <div id="content">
             <li>Германия</li>
             <li>Франция</li>
             <li>Греция</li>
@@ -91,8 +69,8 @@
 
       <!-- Блок С.Америка -->
       <div class="block">
-        <ul><h3><a href="#">Туры по Северной Америке</a></h3>
-          <div>
+        <ul><h3><a href="#" id="n_america">Туры по Северной Америке</a></h3>
+          <div id="content_2">
             <li>Соединенные Штаты Америки</li>
             <li>Канада</li>
           </div>
@@ -101,8 +79,8 @@
 
       <!-- Блок Л.Америка -->
       <div class="block">
-        <ul><h3><a href="#">Туры по Латинской Америке</a></h3>
-          <div>
+        <ul><h3><a href="#" id="l_america">Туры по Латинской Америке</a></h3>
+          <div id="content_3">
             <li>Бразилия</li>
             <li>Чили</li>
             <li>Аргентина</li>
@@ -115,8 +93,8 @@
 
       <!-- Блок Азия -->
       <div class="block">
-        <ul><h3><a href="#">Туры по Азии</a></h3>
-          <div>
+        <ul><h3><a href="#" id="asia">Туры по Азии</a></h3>
+          <div id="content_4">
             <li>Китай</li>
             <li>Индия</li>
             <li>Эмираты</li>
@@ -129,8 +107,8 @@
 
       <!-- Блок Африка -->
       <div class="block">
-        <ul><h3><a href="#">Туры по Африке</a></h3>
-          <div>
+        <ul><h3><a href="#" id="africa">Туры по Африке</a></h3>
+          <div id="content_5">
             <li>Египет</li>
             <li>Тунис</li>
             <li>Мадейра</li>
@@ -143,8 +121,8 @@
 
       <!-- Блок Россия -->
       <div class="block">
-        <ul><h3><a href="#">Туры по России</a></h3>
-          <div>
+        <ul><h3><a href="#" id="russia">Туры по России</a></h3>
+          <div id="content_6">
             <li>Москва</li>
             <li>Санкт-Петербург</a></li>
             <li>Золотое Кольцо</li>
@@ -159,8 +137,8 @@
 
       <!-- Блок Австралия -->
       <div class="block">
-        <ul><h3><a href="#">Туры по Австралии и Океании</a></h3>
-          <div>
+        <ul><h3><a href="#" id="australia">Туры по Австралии и Океании</a></h3>
+          <div id="content_7">
             <li>Австралия</li>
             <li>Новая Зеландия</li>
             <li>Фиджи</li>
@@ -181,6 +159,7 @@
           <li><a href="index.html">Главная</a></li>
           <li><a href="about_us.html">О компании</a></li>
           <li><a href="catalog.html">Каталог туров</a></li>
+          <li><a href="calculator.html">Рассчет туров</a></li>
         </ul>
 
         <!-- Контакты -->

@@ -10,14 +10,9 @@ body {
 .block {
   margin: 0 30px 0 0; }
 
-ul{
-	list-style: none; }
-  ul:active li {
-    display: block; }
-    ul li{
-      display: none;
-      padding: 5px 0 0 0;
-      position: relative; }
+ul li{
+  padding: 5px 0 0 0;
+  position: relative; }
 
 a {
   color: black;

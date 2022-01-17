@@ -6,71 +6,21 @@
     <title>Туристическая компания L'Avion | Туры по всему миру</title>
     <link rel="Stylesheet" href="css/about_us.css">
     <link rel="Stylesheet" href="css/media.css">
-    <!-- <link rel="import" href="header.html"> -->
     <link rel="Stylesheet" href="css/header.css">
     <link rel="Stylesheet" href="css/footer.css">
-    <!-- <link rel="Stylesheet" href="css/calculator.css"> -->
-    <script src="calculator.js" defer></script>
   </head>
 
   <body>
-    <!-- <script>
-      document.addEventListener('HTMLImportsLoaded', function(){
-        let link = document.querySelector('link[href*="header"]');
-        let template = link.import.querySelector('template');
-        let clone = document.importNode(template.content, true);
-        document.querySelector('#header').appendChild(clone);
-      });
-    </script> -->
     <!-- Шапка -->
     <div id="header">
       <div class="pages">
-        <h1 class="page"><a href="index.html">Главная</a></h1>
-        <h1 class="page"><a href="about_us.html">О компании</a></h1>
-        <h1 class="page"><a href="catalog.html">Каталог туров</a></h1>
+        <li class="page"><a href="index.html">Главная</a></li>
+        <li class="page"><a href="about_us.html">О компании</a></li>
+        <li class="page"><a href="catalog.html">Каталог туров</a></li>
+        <li class="page"><a href="calculator.html">Рассчет туров</a></li>
       </div>
-      <div class="title-calc">
-        <h2 class="title">Туристическая компания L'Avion - с нами Вы увидите 
-          весь мир!</h2>
-        <!-- Калькулятор -->
-        <div class="calculator">
-          <form name="calculator">
-            <div class="mainSearchForm">
-              <table>
-                <tr>
-                  <div class="country">
-                    <td>Куда летим?</td>
-                    <td>
-                      <select name="country" id="country">
-                        <option value="1000">Турция</option>
-                        <option value="4000">Великобритания</option>
-                        <option value="2000">Бразилия</option>
-                      </select>
-                    </td>
-                  </div>
-                  <div class="days">
-                    <p>Сколько дней?
-                      <input id=days type="number" value="" size="40">
-                    </p>
-                  </div>
-                  <div class="nights">
-                    <p>Сколько ночей?
-                      <input id=nights type="number" value="" size="40">
-                    </p>
-                  </div>
-                  <div class="people">
-                    <p>Сколько людей?
-                      <input id=people type="number" value="" size="40">
-                    </p>
-                  </div>
-                </tr>
-              </table>
-            </div>
-          </form>
-          <button onclick="calc()">Стоимость тура:</button>
-          <div id="result">0</div>
-        </div>
-      </div>
+      <h2 class="title">Туристическая компания L'Avion - с нами Вы увидите 
+        весь мир!</h2>
     </div>
     <!-- Опыт -->
     <div class="info-one">
@@ -84,10 +34,13 @@
           Мы всегда с вниманием изучаем пожелания клиента и на их основе 
           формируем список предложений для будущего отпуска. Все тонкости при 
           выборе направления мы рассказываем сразу, чтобы поездка приносила
-          только приятные сюрпризы.</p>
+          только приятные сюрпризы.
+        </p>
       </div>
-      <img class="img" src="images/exp.jpg" alt="experience" width="626" 
-      height="417">
+      <div>
+        <img class="rightimg" src="images/exp.jpg" class="img-fluid" alt="experience" 
+        width="626" height="417">
+      </div>
     </div>
 
     <!-- Цитата -->
@@ -96,7 +49,8 @@
 
     <!-- О путешествиях -->
     <div class="info-two">
-      <img src="images/jour.jpg" alt="journey" width="479" height="500">
+      <img class="leftimg" src="images/jour.jpg" class="img-fluid" alt="journey" 
+      width="479" height="500">
       <div class="info">
         <h3 class="second-title">Путешествия на любой вкус</h3>
         <p class="text">Мы предлагаем разнообразие туров по России и другим 
@@ -106,7 +60,8 @@
           Найдутся интересные туры и для любителей горных лыж и пляжного отдыха.
           Для ценителей круизной романтики – путешествия по морю и крупным 
           рекам, а для тех, кто стремится пополнить багаж знаний, - 
-          образовательные туры в любую точку земного шара.</p>
+          образовательные туры в любую точку земного шара.
+        </p>
       </div>
     </div>
     <!-- Подвал -->
@@ -118,6 +73,7 @@
           <li><a href="index.html">Главная</a></li>
           <li><a href="about_us.html">О компании</a></li>
           <li><a href="catalog.html">Каталог туров</a></li>
+          <li><a href="calculator.html">Рассчет туров</a></li>
         </ul>
 
         <!-- Контакты -->

@@ -1,4 +1,7 @@
-css/ 
+Travelista/ 
 node_modules/
 bootstrap-5.1.0-dist/
 package-lock.json
+footer.html
+header.html
+.sass-cache/

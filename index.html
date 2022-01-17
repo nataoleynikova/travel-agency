@@ -6,70 +6,22 @@
     <title>Туристическая компания L'Avion | Туры по всему миру</title>
     <link rel="Stylesheet" href="css/index.css">
     <link rel="Stylesheet" href="css/media.css">
-    <!-- <link rel="import" href="header.html"> -->
     <link rel="Stylesheet" href="css/header.css">
     <link rel="Stylesheet" href="css/footer.css">
-    <!-- <link rel="Stylesheet" href="css/calculator.css"> -->
-    <script src="calculator.js" defer></script>
   </head>
 
   <body>
-    <!-- <script>
-      document.addEventListener('HTMLImportsLoaded', function(){
-        let link = document.querySelector('link[href*="header"]');
-        let template = link.import.querySelector('template');
-        let clone = document.importNode(template.content, true);
-        document.querySelector('#header').appendChild(clone);
-      });
-    </script> -->
     <!-- Шапка -->
     <div id="header">
       <div class="pages">
-        <h1 class="page"><a href="index.html">Главная</a></h1>
-        <h1 class="page"><a href="about_us.html">О компании</a></h1>
-        <h1 class="page"><a href="catalog.html">Каталог туров</a></h1>
+        <li class="page"><a href="index.html">Главная</a></li>
+        <li class="page"><a href="about_us.html">О компании</a></li>
+        <li class="page"><a href="catalog.html">Каталог туров</a></li>
+        <li class="page"><a href="calculator.html">Рассчет туров</a></li>
       </div>
       <div class="title-calc">
         <h2 class="title">Туристическая компания L'Avion - с нами Вы увидите 
           весь мир!</h2>
-        <!-- Калькулятор -->
-        <div class="calculator">
-          <form name="calculator">
-            <div class="mainSearchForm">
-              <table>
-                <tr>
-                  <div class="country">
-                    <td>Куда летим?</td>
-                    <td>
-                      <select name="country" id="country">
-                        <option value="1000">Турция</option>
-                        <option value="4000">Великобритания</option>
-                        <option value="2000">Бразилия</option>
-                      </select>
-                    </td>
-                  </div>
-                  <div class="days">
-                    <p>Сколько дней?
-                      <input id=days type="number" value="" size="40">
-                    </p>
-                  </div>
-                  <div class="nights">
-                    <p>Сколько ночей?
-                      <input id=nights type="number" value="" size="40">
-                    </p>
-                  </div>
-                  <div class="people">
-                    <p>Сколько людей?
-                      <input id=people type="number" value="" size="40">
-                    </p>
-                  </div>
-                </tr>
-              </table>
-            </div>
-          </form>
-          <button onclick="calc()">Стоимость тура:</button>
-          <div id="result">0</div>
-        </div>
       </div>
     </div>
     <div>
@@ -157,6 +109,7 @@
           <li><a href="index.html">Главная</a></li>
           <li><a href="about_us.html">О компании</a></li>
           <li><a href="catalog.html">Каталог туров</a></li>
+          <li><a href="calculator.html">Рассчет туров</a></li>
         </ul>
 
         <!-- Контакты -->
